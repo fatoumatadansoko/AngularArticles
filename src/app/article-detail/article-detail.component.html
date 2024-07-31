@@ -1,0 +1,10 @@
+<!-- src/app/article-detail/article-detail.component.html -->
+<div class="container">
+    <div *ngIf="article">
+      <h1>{{ article.title }}</h1>
+      <p> {{article.body}} </p>
+      <!-- <button (click)="editArticle()" class="btn btn-primary">Modifier</button> -->
+      <button (click)="deleteArticle()" class="btn btn-danger">Supprimer</button>
+    </div>
+  </div>
+  

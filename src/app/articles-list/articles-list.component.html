@@ -1,0 +1,12 @@
+<!-- src/app/articles-list/articles-list.component.html -->
+<div class="container">
+    <h1>Liste des Articles</h1>
+    <button routerLink="/article/new" class="btn btn-primary mb-3">Ajouter un Article</button>
+    <div class="list-group">
+      <a *ngFor="let article of articles" [routerLink]="['/article', article.id]" class="list-group-item list-group-item-action">
+        <h5>{{ article.title }}</h5>
+        <p>{{ article.description }}</p>
+      </a>
+    </div>
+  </div>
+  
